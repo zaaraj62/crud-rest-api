@@ -4,47 +4,47 @@ This is a Spring Boot-based CRUD REST API that manages employee records in a MyS
 
 Features:
 
-Full CRUD operations (Create, Read, Update, Delete)
+- Full CRUD operations (Create, Read, Update, Delete)
 
-RESTful API using Spring Boot
+- REST API using Spring Boot
 
-Integration with MySQL database
+- Integration with MySQL database
 
-Spring Data JPA and Hibernate ORM
+- Spring Data JPA and Hibernate ORM
 
-Project auto-configuration with Spring Boot
+- Project auto-configuration with Spring Boot
 
-Easy testing with tools like Postman or curl
+- Easy testing with tools like Postman or curl
 
-Technologies Used: Java 17+, Spring Boot, Spring Data JPA, MySQL, Maven, Postman
+- Technologies Used: Java 17+, Spring Boot, Spring Data JPA, MySQL, Maven, Postman
 
 Setup Instructions:
 
 Prerequisites:
 
-Java 17 or newer
+- Java 17 or newer
 
-MySQL installed and running
+- MySQL installed and running
 
-Maven installed
+- Maven installed
 
 Steps to Run:
 
-Clone the Repository: git clone https://github.com/your-username/your-repo-name.git
+1. Clone the Repository: git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
-Create the Database in MySQL: CREATE DATABASE ems;
+2. Create the Database in MySQL: CREATE DATABASE ems;
 
-Update src/main/resources/application.properties with: spring.datasource.url=jdbc:mysql://localhost:3306/ems?useSSL=false
+3. Update src/main/resources/application.properties with: spring.datasource.url=jdbc:mysql://localhost:3306/ems?useSSL=false
 spring.datasource.username=root
 spring.datasource.password=Mysql123
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
 
-Run the application: If using Maven Wrapper:
+4. Run the application: If using Maven Wrapper:
 ./mvnw spring-boot:run
 
-If using Maven globally:
+5. If using Maven globally:
 mvn spring-boot:run
 
 API Endpoints: GET /api/employees - Get all employees
